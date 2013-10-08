@@ -1,0 +1,164 @@
+/* Reset code to remove theme inherent styling */
+.dcjq-mega-menu{
+    
+    margin-bottom: 6px;
+}
+.dcjq-mega-menu ul.menu ul, .dcjq-mega-menu ul.menu li {
+list-style: none; 
+padding: 0; 
+margin: 0;
+}
+.dcjq-mega-menu ul.menu ul {
+display: none; /* Hides non-mega links */
+}
+.dcjq-mega-menu ul.menu .sub ul {
+display: block; /* overrides above hide */
+}
+
+/* Main menu styles */
+.dcjq-mega-menu ul.menu {
+width: 100%; 
+
+position: relative; /* Important - required for positioning of mega menu */
+line-height: 16px;
+margin-top: 20px;
+}
+.dcjq-mega-menu ul.menu li {
+float: left; 
+}
+.dcjq-mega-menu ul.menu li a {
+float: left; 
+display: block;  
+padding: 5px 10px; 
+color: #00a94e; 
+text-decoration: none;
+text-transform:uppercase;
+font-family: Arial;
+}
+.dcjq-mega-menu ul.menu li.mega-hover a, .dcjq-mega-menu ul.menu li a:hover, .dcjq-mega-menu ul.menu li a.current {
+background-position: 100% -40px; 
+
+text-shadow: none;
+}
+
+/* Arrow tag for parent links */
+.dcjq-mega-menu ul.menu li a.dc-mega {
+position: relative;  
+font-size: 12px;
+}
+/*.dcjq-mega-menu ul.menu li a .dc-mega-icon {
+display: block; 
+position: absolute; 
+top: 18px; 
+right: 15px; 
+width: 8px; 
+height: 6px; 
+}
+.dcjq-mega-menu ul.menu li.mega-hover a .dc-mega-icon {
+background-position: 0 100%;
+}*/
+
+/* Mega Menu Styling */
+/* Mega Drop Down Container */
+
+.dcjq-mega-menu ul.menu li .sub-container {
+position: absolute; /* Required */
+background: url('../images/greenMenu.png') top left no-repeat ;
+margin-top: 0px;
+margin-left:30px;
+
+/*padding-left: 6px; */
+}
+/*.dcjq-mega-menu ul.menu li .sub {
+background: url(../images/bg_sub.png) no-repeat 100% 100%; 
+padding: 20px 20px 20px 10px;
+}*/
+.dcjq-mega-menu ul.menu li .sub-container.mega .sub {
+padding: 5px 6px 0 0;
+
+
+}
+.dcjq-mega-menu ul.menu li .sub .row { /* Clear the sub-menu floats */
+width: 100%; 
+overflow: hidden; 
+
+clear: both;
+}
+.dcjq-mega-menu ul.menu li .sub li {
+float: none; 
+font-size: 1em; 
+font-weight: bold;
+}
+/* Sub-menu Headers */
+.dcjq-mega-menu ul.menu li .sub li.mega-hdr { /* Sub-menu headers - i.e. 2nd level navigation */
+float: left; /* Float the sub-menus and give them a fixed width to from the mega menu rows */
+width: 260px;
+margin: 0 10px 5px 10px;
+}
+.dcjq-mega-menu ul.menu li .sub
+{padding-top:10px;
+
+border-top:0px;
+width:118px;
+border-bottom:1px solid black;
+margin-top: -5px;
+}
+.dcjq-mega-menu ul.menu li .sub a { /* Clear the styles from the top-level links and set the font styles */
+background: none; 
+border: none; 
+text-shadow: none; 
+color: #fff; 
+background-color: #00a94e;
+opacity: 0.9;
+width:108px;
+border-left:1px solid black;
+border-right:1px solid black;
+padding: 7px 10px; 
+display: block; 
+float: none; 
+text-decoration: none; 
+font-size: 0.9em; 
+
+
+}
+.dcjq-mega-menu ul.menu li .sub li.mega-hdr a.mega-hdr-a {
+padding: 0px 10px; 
+margin-bottom: 5px; 
+text-transform: uppercase; 
+font-weight: bold; 
+color: #00194e; 
+}
+.dcjq-mega-menu ul.menu li .sub li.mega-hdr a.mega-hdr-a:hover {
+color: #00194e;
+text-decoration: underline; 
+text-shadow: none;
+}
+
+/* Style the 3rd level links */
+.dcjq-mega-menu ul.menu li .sub li ul li {
+margin-right: 10px;
+}
+.dcjq-mega-menu ul.menu .sub li.mega-hdr li a {
+color: #FFF;
+font-weight: normal; 
+padding: 3px 0 3px 25px; 
+}
+.dcjq-mega-menu ul.menu .sub li.mega-hdr li a:hover {
+color: #00a94e;
+}
+
+/* Styling for items with only 2 levels */
+.dcjq-mega-menu ul.menu li .sub-container.non-mega .sub {
+/*padding: 20px 20px 20px 10px;*/
+}
+.dcjq-mega-menu ul.menu li .sub-container.non-mega li {
+width: 190px; /* Set the drop down width */
+font-size: 12px;
+}
+.dcjq-mega-menu ul.menu li .sub-container.non-mega li a {
+padding: 7px 5px; 
+}
+.dcjq-mega-menu ul.menu li .sub-container.non-mega li a:hover {
+color: #FFF;
+
+}

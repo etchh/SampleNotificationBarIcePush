@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+/* common styles */
+body{
+	margin:0;
+	padding:0;
+	background:#0e0e0d;
+	padding:5px 0;
+	}
+.f{
+	float:left;
+	}
+.f-r{
+	float:right;
+	}
+img{
+	border:0;
+	}
+a{
+	text-decoration:none;
+	}
+/* contaner condition -----------------------------------*/	
+.content{
+	background:#FFF;
+	margin-top:5px;
+	height:1150px;
+	width:100%;
+	position:relative;
+	}
+        .products .item{
+	width:200px;
+	margin-left:15%;
+	margin-top:7%;
+	}
+@media (orientation : landscape) {
+		.content{
+		height: 900px;
+		
+		}
+		.products .item{
+	width:150px;
+	margin-left:15%;
+	margin-top:1%;
+        height: 300px;
+	}
+		
+	}
+/*--------------------------------------------------------*/
+.container{
+	margin:0 auto;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#323232;
+	width:99%;
+	}
+.top-bar{
+	background:#00a94e;
+	color:#FFF;
+	height:30px;
+	line-height:30px;
+	padding:0 1%;
+	}
+.top-bar a{
+	color:#FFF;
+	}
+.top-bar a:hover{
+	color:#0e0e0d;
+	}
+.search-area{
+	position:relative;
+	margin-left:5px;
+	}
+.top-bar input[type=text]{
+	border:1px solid #c0c0c0;
+	border-radius:0;
+	background:#FFF url(/assets/frontend/images/searchIcon.png) no-repeat 120px 3px;
+	width:130px;
+	}
+.top-bar input[type=submit]{
+	background:url(/assets/frontend/images/search-btn.jpg) repeat;
+	color:#323232;
+	border-radius:0;
+	border:0;
+	height:21px;
+	}
+.logo{
+	text-align:center;
+	margin-top:10%;
+	margin-bottom:3%;
+	}
+.login-form{
+	width:246px;
+	margin:0 auto;
+	}
+.form-row{
+	margin-bottom:10px;
+            overflow:hidden;
+	}
+        .form-row textarea
+        {
+            margin: 0px;
+            border:1px solid silver;
+        }
+        .ipadrow
+        { margin: 5px 0;
+    overflow:hidden;}
+.login-form .ipadrow label{width:95px;float:left;line-height:23px;}
+.login-form .ipadrow label.error{width:130px;float:left;line-height:23px;clear: both;color:red;margin-left: 100px;font-size: 11px}
+.login-form .ipadrow label.error-message{width:229px;float:left;font-size: 11px;color:red}
+
+.login-form .ipadrow input[type=text], .login-form .row input[type=password]
+{
+	border:1px solid #c0c0c0;
+	border-radius:0;
+	}
+        
+        .login-form .row input[type=password]
+        {
+            width: 120px ;
+        }
+input[type=submit], .btn{
+	/*background:url(/assets/frontend/images/buttons.jpg) repeat;*/
+        	background-color: #00a94e;
+
+	color:#FFF;
+	border-radius:0;
+	border:0;
+	padding:1px 10px;
+	margin-right:12px;
+	line-height:20px;
+	}
+.warper{
+	padding:8px;
+	}
+h1.title{
+	font-size:12px;
+	margin:0 0 5px 0;
+	}
+th{
+	background:#00a94e;
+	padding:3px;
+	color:#FFF;
+	font-weight:normal;
+	}
+td{
+	padding:5px;
+	text-align:center;
+	border-bottom:1px solid #d1d1d1;
+	}
+.counter {
+	margin-left: 10px;
+	overflow: hidden;
+}
+.counter img {
+	margin-top: 3px;
+}
+.number {
+	width: 30px;
+	border: 1px dotted #CCC;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 5px;
+}
+.total{background:#c0c0c0;border-bottom:5px solid #FFF;}
+.payment label{
+	width:115px;
+	float:left;
+	padding-right:5px;
+	line-height:25px;
+	}
+      .payment label.radioOption
+      {
+          float: none;
+      }
+.payment input[type=text], .payment input[type=tel],.payment select, .row select,
+.row input[type=text]
+ {
+	border-radius:0;
+	border:1px solid #c0c0c0;
+	width:170px;
+	}
+.payment select, .row select{
+	width:180px;
+	}
+label.option, .number{
+	width:30px !important;
+	}
+/* products inner page --------------------------*/
+.products{
+	text-align:center;
+	}
+.price{
+	color:#00a94e;
+	font-size:12.6px;
+	margin:0;
+	}
+.prev, .next{
+	position:absolute;
+	bottom:40px;
+	left:-4px;
+	}
+.next{
+	left:auto;
+	right:-4px;
+	}
+.single-product, .confirmation{
+	width:80%;
+	margin-left:12%;
+	margin-top:7%;
+	float:left;
+	}
+.confirmation{
+	margin-top:10%;
+	width:100%;
+	text-align:center;
+	margin-left:0;
+	font-size:18px;
+	}
+.confirmation a{
+	color:#00a94e;
+	}
+.single-product .preview{
+	text-align:center;
+	width:20%;
+	}
+.single-product .details{
+	width:70%;
+	padding:0 5%;
+	}
+.row{
+	overflow:hidden;
+	line-height:25px;
+	}
+.row label{
+	float:left;
+	width:70px;
+	}
+.row select{
+	width:170px;
+	padding:2px;
+	}
+.quantity{
+	width:50px !important;
+	}
+h2{
+	font-size:12px;
+	border-bottom:1px dotted #323232;
+	font-weight:normal;
+	}
+        
+        #checkoutform label.error
+        {
+            color:red;
+            float:right;
+            width: 50%;
+                margin-right: 7%;
+          
+        }
+        @media (orientation : landscape)
+        {
+           #checkoutform label.error
+           {margin-right: 18%;}
+        }
+        .products
+{
+    background-color: #fff;
+height: 100%;
+padding-bottom: 5%;
+
+}
+
+ .SuccessMessage
+ {
+     font-size: 25px !important;
+     margin-top: 15%;
+ }
+ 

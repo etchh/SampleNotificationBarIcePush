@@ -1,0 +1,238 @@
+/* 
+    Document   : ie7
+    Created on : Sep 12, 2012, 3:30:15 PM
+    Author     : Khalil
+    Description:
+        Purpose of the stylesheet follows.
+*/
+h3 {font-size: 1.25em}
+h4 a{font-size: 0.8em;}
+.register-menu{
+    height:20px;
+}
+.new-collections .item div {
+    float: right;
+    padding: 0;
+}
+
+#supportForm input[type="submit"]{
+    margin: 0;
+}
+.new-collections{
+   height: 370px;}
+
+
+.center-container{
+    float: left;
+    width: 100%;
+}
+.header input[type='submit']{right:10px;top:3px;width:15px}
+.basket-menu a{
+    float: left;
+}
+.basket-menu span{float: left;}
+.basket-menu span.sep{margin: 0 3px;}
+.track-order h1{float: left;}
+.track-order form{float: right;}
+.filter-results .item{
+    width: 180px !important;
+}
+.dcjq-mega-menu  {
+    z-index: 1000;
+    position: relative;
+}
+
+.dcjq-mega-menu UL.menu LI
+{
+ 
+    white-space: nowrap;
+}
+#example{
+    z-index: 100;
+}
+#recommendationTable tr td img
+{
+    width: 45px;
+    
+}
+#recommendationTable tr td a
+
+{
+   background: url("../images/basket1.png") no-repeat 3px center #00a94e !important;
+    padding-left: 19px !important;
+    background: #00a94e;
+    color: #FFF;
+    border: 0;
+    font-size: 11px;
+    padding: 3px 8px;
+    margin: 0 1px;
+    
+}
+
+/*---------------debug------------------*/
+.products
+{
+    padding-bottom: 1px;
+    padding-top: 3px;
+}
+
+.width200px
+{
+ width:250px;   
+}
+
+.red-product
+{
+    font-size: 12px;
+}
+.addresses label.error{margin-right: 650px;margin-left: 0px;}
+.space-product
+{
+  display: inline; 
+    width:100% ;
+}
+#Img222
+{
+   width:135px;height:180px;
+}
+#divItem
+{
+    float: left;
+    
+          width: 135px;
+    /*height: 185px;*/
+    height: 250px;
+    margin: 12px 30px;
+      padding-bottom: 30px;
+      
+}#divCenter
+{text-align: center}
+.NormalLabel{ font-size: 10px;padding-left: 2px;width: 110px;display: block}
+  .caroufredsel_wrapper
+                        
+                        {
+                        
+                        margin-left: -10px!important;}
+                        
+                        #ship_address label.error
+                        {
+                            width:150px;
+                        }
+                        
+                         .homeMenu
+                        {
+                            padding-bottom: 1%;
+                        }
+                        .recommendations .item
+                        {
+                            height:304px;
+                        }
+                        .sort
+                        {
+                            height:32px;
+                        }
+                        
+                        #searchResults div a img
+                        {
+                            height:158px;
+                            width:141px;
+                        }
+                        #productsContainter div div
+                        {
+                         width: 135px;
+
+float: left;
+                        }
+                 
+                        .divName
+{
+    height:30px;
+    margin: 0px;
+}
+.description
+{
+    height:35px;
+}
+
+#addButtonDivGroup a
+{
+        background: #00a94e;
+    color: #FFF;
+    border: 0;
+    font-size: 11px;
+    padding: 3px 8px;
+    margin: 0 1px;
+}
+.readMoreLink
+{
+    color:#00a94e;
+    font-weight:bold;
+}
+.productItemDiv
+{
+                             width: 135px;
+
+float: left;
+margin: 12px 30px;
+text-align: center;
+}
+
+.homePromotion,.homePromotion img
+{
+  width: 317.5px;  
+}
+
+   #addButtonDivGroup
+   {
+       height:50px;
+   }
+   
+   .dottedDiv .promTitleDiv
+   {
+       position: relative;
+       top:-10px;
+   }
+   .wide-box
+   {
+       margin-bottom: -14px;
+   }
+ 
+.trackOrder
+{
+    width:105px !important;
+}
+.addressError label.error
+{
+  float: left;
+}
+
+    .homeMenu a
+                        {
+                            padding-bottom: 3% !important;
+                            padding:0 15px;
+                        }
+                        
+                        .closeDiv
+                        {
+                            margin-top: -20px;
+                        }
+                        
+                        .personalizeLink
+                        {
+                            margin-left: -60px;
+                        }
+                        
+                        .transparentPopup
+                        {
+                             background: url("../images/transparentBg.png") repeat ;
+                        }
+                        
+                        .pickuplocationclass 
+                        {
+                            width:400px !important;
+                        }
+                    .dcjq-mega-menu ul.menu li .sub a
+                    {
+                        background:url('../images/trans_bg.png') repeat;
+                        
+                    }
