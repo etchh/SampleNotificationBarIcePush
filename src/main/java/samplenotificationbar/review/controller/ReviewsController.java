@@ -4,6 +4,7 @@
  */
 package samplenotificationbar.review.controller;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
@@ -92,5 +93,19 @@ public class ReviewsController {
 //        
         model.addAttribute("reviews",reviewService.getAllReviewsForProduct(Integer.parseInt(productId)));
         return "/products/reviews";
+    } 
+    
+    @RequestMapping(value="/getRecentReviewsSize.htm")
+    public String getRecentReviewsSize(@RequestParam("group") String productId ,HttpServletRequest request,HttpServletResponse response,Model model) throws IOException{
+        
+//         return new ModelAndView("results", "chat", chatFormData);
+        
+//        return new ModelAndView(new JSONView((productService.getRecentReviews(productId) == null)?new ArrayList<Review>():productService.getRecentReviews(productId)));
+//         PushContext.getInstance(request.getSession()
+//				.getServletContext()).push(productId);
+//        
+      model.addAttribute("reviewsSize", reviewService.getAllReviewsForProduct(Integer.parseInt(productId)).size());
+      return "/products/reviewsSize";
+      
     }   
 }

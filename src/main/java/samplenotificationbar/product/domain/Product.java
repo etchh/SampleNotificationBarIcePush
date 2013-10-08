@@ -79,7 +79,7 @@ public class Product {
     }
     
     @ForeignKey(name = "product_id")
-    @OneToMany(cascade= {CascadeType.PERSIST, CascadeType.REFRESH},fetch= FetchType.EAGER)
+    @OneToMany(cascade= {CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "product_id")
     public Set<Review> getReviews() {
         return reviews;

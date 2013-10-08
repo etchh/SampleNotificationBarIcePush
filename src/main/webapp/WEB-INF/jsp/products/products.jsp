@@ -217,7 +217,7 @@
                 <div class="main-column f row" style="padding-left: 5px">
                     <article>
                         <header>
-                            <h1>Customer Reviews (${reviewsSize}) <a class="f-r greenFont" id="addReview">Add review</a></h1>
+                            <h1>Customer Reviews <icep:region group="${product.productId}" page="/reviews/getRecentReviewsSize.htm" evalJS="false"/> <a class="f-r greenFont" id="addReview">Add review</a></h1>
                         </header>
                     </c:if>
                     <div id="addReviewTextArea" style="display: none">

@@ -4,12 +4,14 @@
     response.setHeader("Pragma", "no-cache");//HTTP 1.0
     response.setHeader("Expires", "0");//prevents proxy caching
 %>
-<c:forEach items="${reviews}" var="review">
-<div class="comment">
-    <strong>${review.user.email}</strong> <span>${review.formatedDate}</span>
-    <p>${review.comment}</p>
-</div>
-<div class="clearfix"></div>
+<c:forEach items="${reviews}" var="review" varStatus="counter">
+   
+        <div class="comment">
+            <strong>${review.user.email}</strong> <span>${review.formatedDate}</span>
+            <p>${review.comment}</p>
+        </div>
+        <div class="clearfix"></div>
+  
 </c:forEach>
 <!--<script type="text/javascript">
 $('#chatRoomMessages td:first').css('font-style','italic').fadeIn(1000);

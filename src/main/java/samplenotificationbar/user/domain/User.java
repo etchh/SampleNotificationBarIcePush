@@ -77,7 +77,7 @@ public class User {
         this.email = email;
     }
     @ForeignKey(name = "user_id")
-    @OneToMany(cascade= {CascadeType.PERSIST, CascadeType.REFRESH},fetch= FetchType.EAGER)
+    @OneToMany(cascade= {CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "user_id")
     public Set<Review> getReviews() {
         return reviews;
