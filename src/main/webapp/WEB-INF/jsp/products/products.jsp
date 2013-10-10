@@ -213,7 +213,7 @@
                 <br /><br />
 
             </div>
-            <c:if test="${reviews.size() ne 0}">
+            <c:if test="${fn:length(reviews) ne 0}">
                 <div class="main-column f row" style="padding-left: 5px">
                     <article>
                         <header>
@@ -229,7 +229,7 @@
                         <icep:region group="${product.productId}" page="/reviews/getRecentReviews.htm" evalJS="false"/>
                     </div>
                     <c:choose>         
-                        <c:when test="${reviews.size() ne 0}">           <%-- user reviews postponed --%>
+                        <c:when test="${fn:length(reviews) ne 0}">           <%-- user reviews postponed --%>
 
                             <div id="afterReview">
                                 <a class="review-prev" style="float: left;display: none;" href="#0"><img src="/assets/frontend/images/prev_arrow.png"/><font style="color:#00a94e;font-weight: bold">&nbsp;Back</font></a>       
@@ -246,7 +246,7 @@
                     <div class="main-column f row" style="padding-left: 5px;">
                         <article>
                             <header>
-                                <h1>Customer Reviews (${reviews.size()}) <a class="f-r greenFont" id="addReview">Add review</a></h1>
+                                <h1>Customer Reviews (${fn:length(reviews)}) <a class="f-r greenFont" id="addReview">Add review</a></h1>
 
                             </header>
                             <div class="comment-box" id="afterReview"></div>

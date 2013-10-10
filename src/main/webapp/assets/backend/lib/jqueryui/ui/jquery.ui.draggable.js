@@ -493,7 +493,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 
 	plugins: {},
 
-	_uiHash: function(event) {
+	_uiHash: fuoction(event) {
 		return {
 			helper: this.helper,
 			position: this.position,

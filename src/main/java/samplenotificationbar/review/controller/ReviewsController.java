@@ -63,7 +63,7 @@ public class ReviewsController {
     
     
     @RequestMapping(value="/reviewNotifier.htm",method = RequestMethod.POST)
-    public String notifyAllUsers(@RequestParam("userId")Integer userId , @RequestParam("productId") Integer productId,@RequestParam("text")String comment,HttpServletRequest request,HttpServletResponse response, Model model, SessionStatus status){
+    public void notifyAllUsers(@RequestParam("userId")Integer userId , @RequestParam("productId") Integer productId,@RequestParam("text")String comment,HttpServletRequest request,HttpServletResponse response, Model model, SessionStatus status){
         Review review = new Review();
         
         review.setComment(comment);
@@ -80,7 +80,7 @@ public class ReviewsController {
 				.getServletContext());
 //	String currentPushId = pushContext.createPushId(request, response);
         pushContext.push(""+productId);
-        return "/products/reviews";
+//        return "/products/reviews";
     }
     @RequestMapping(value="/getRecentReviews.htm")
     public String getRecentReviews(@RequestParam("group") String productId ,HttpServletRequest request,HttpServletResponse response,Model model){
